@@ -5,7 +5,7 @@ import { fetchX, meta } from "../utils.ts";
 const apikey = "0QfOX3Vn51YCzitbLaRkTTBadtWpgTN8NZLW0C1SEM";
 const imgRegexp = /data-document-id="cms\/api\/amp\/image\/([^"]+)"/g;
 const imgRegexpReplacement =
-  'src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1SRtMb$1.img"';
+  'src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/$1.img"';
 
 export const msnPath = "/msn/:market/:id";
 export const msn = createMiddleware<Record<PropertyKey, never>, typeof msnPath>(
